@@ -25,18 +25,24 @@
     .header {
       background: linear-gradient(to right, #a00101, #ec5c5c, #d1a092);
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
+      align-content: center;
       justify-content: space-between;
       padding: 10px 20px;
     }
 
     .header img {
-      height: 130px;
+      height: 100px;
+      max-width: 100%;
     }
 
-    .nav-buttons {
+   .nav-buttons {
       display: flex;
-      gap: 60px;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center; 
+      margin-top: 10px;
     }
 
     .nav-buttons a {

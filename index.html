@@ -19,20 +19,28 @@
 
     /* Header/Nav Bar */
     .header {
+        width: 100%;
          background: linear-gradient(to right,  #a00101,  #ec5c5c ,#d1a092  );
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 10px 20px;
+      flex-wrap: wrap;
+      box-sizing: border-box;
     }
 
     .header img {
       height: 130px;
+      max-width: 100%;
     }
 
     .nav-buttons {
       display: flex;
       gap: 60px;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center; 
+      margin-top: 10px;
     }
 
     .nav-buttons a {
