@@ -127,13 +127,30 @@
       border: 4px solid black;
       border-radius: 15px;
     }
+    .go-up-btn {
+  background: linear-gradient(to right, #ffe600, #ffa500, #ff4500);
+  color: black;
+  padding: 12px 25px;
+  font-size: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.go-up-btn:hover {
+  transform: scale(1.1);
+  color: white;
+}
   </style>
 </head>
 
 <body>
 
   <!-- Header -->
-  <div class="header">
+  <div id="top" class="header">
     <img src="sangitwbg.png" alt="Sangeet Logo" />
     <div class="nav-buttons">
       <a href="index.html"><i class="fas fa-home"></i>Home</a>
@@ -165,6 +182,9 @@
       </video>
     </div>
   </div>
-
+<center>
+<h1 id="bottom">
+  <a href="#top" class="go-up-btn">⬆ Go Up</a>
+</h1>
 </body>
 </html>
