@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SANGEET VISTAAR</title>
+  <link rel="icon" href="sangitwbg.png" type="image/png" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffa500, #ffeb3b, #ffffff);
+       color: #2c2c2c; 
+    }
+
+    /* Header/Nav Bar */
+    .header {
+         background: linear-gradient(to right,  #a00101,  #ec5c5c ,#d1a092  );
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .header img {
+      height: 130px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 60px;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+     background: linear-gradient(to right, #ffe600, #ffa500, #ff4500);
+
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding: 8px 15px;
+    }
+
+    .nav-buttons a:hover {
+      transform: scale(1.2);
+      color: #020200;
+     
+    }
+
+    .nav-buttons a i {
+      margin-right: 10px;
+    }
+
+    /* Individual Icon Animations */
+    .nav-buttons a:nth-child(1) i {
+      animation: bounce 1s infinite;
+    }
+
+    .nav-buttons a:nth-child(2) i {
+      animation: shake 0.5s infinite;
+    }
+
+    .nav-buttons a:nth-child(3) i {
+      animation: rotate360 4s linear infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(10deg); }
+      50% { transform: rotate(-10deg); }
+      75% { transform: rotate(10deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes rotate360 {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+  
+
+    /* About Section */
+    .about {
+      padding: 40px 20px;
+      text-align: center;
+   
+
+    }
+
+    .about h2 {
+      font-size: 32px;
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    .footer {
+      
+      text-align: center;
+      padding: 50px;
+    }
+
+    .footer a {
+      color: #dbb90c;
+      margin: 0 10px;
+      font-size: 28px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+  
+
+    .footer p {
+      margin: 10px 0 0;
+      font-size: 10;
+    }
+    .about-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-buttons a {
+  padding: 14px 28px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  border-radius: 10px;
+  background: linear-gradient(to left, #ffe600, #ffa500, #ff2600);
+  
+}
+
+.about-buttons a:hover {
+  color: white;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="sangitwbg.png" alt="Sangeet Logo" />
+    <div class="nav-buttons">
+      <a href="index.html"><i class="fas fa-home"></i>Home</a>
+      <a href="audio.html"><i class="fas fa-music"></i>Audio</a>
+      <a href="videos.html"><i class="fas fa-video"></i>Videos</a>
+    </div>
+  </div>
+
+
+
+  <!-- About Section -->
+  <div class="about">
+    <h2>About Maharashtra's Music</h2>
+    <p>
+      <b>Marathi music beautifully echoes the soul of Maharashtra. From energetic Lavani and soulful Abhangs to classical Natya Sangeet, it blends emotion, devotion, and culture—creating a timeless bond with every generation.</b>
+
+
+    </p>
+  </div>
+<div class="about-buttons">
+  <a href="audio.html"><i class="fas fa-music"></i> Audio</a>
+  <a href="videos.html"><i class="fas fa-video"></i> Video</a>
+</div>
+  <!-- Footer -->
+  <div class="footer">
+    <p>Follow us:</p>
+    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/pawan__katkhede/?hl=fr " target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <p>&copy; 2025 Sangeet Vistaar</p>
+  </div>
+
+</body>
+</html>

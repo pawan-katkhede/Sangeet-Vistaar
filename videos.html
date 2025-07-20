@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SANGEET VISTAAR - Videos</title>
+  <link rel="icon" href="sangitwbg.png" type="image/png" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #ffa500, #ffeb3b, #ffffff);
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background: linear-gradient(to right, #a00101, #ec5c5c, #d1a092);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .header img {
+      height: 130px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 60px;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      background: linear-gradient(to right, #ffe600, #ffa500, #ff4500);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding: 8px 15px;
+    }
+
+    .nav-buttons a:hover {
+      transform: scale(1.2);
+      color: #020200;
+    }
+
+    .nav-buttons a i {
+      margin-right: 10px;
+    }
+
+    .nav-buttons a:nth-child(1) i {
+      animation: bounce 1s infinite;
+    }
+
+    .nav-buttons a:nth-child(2) i {
+      animation: shake 0.5s infinite;
+    }
+
+    .nav-buttons a:nth-child(3) i {
+      animation: rotate360 4s linear infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(10deg); }
+      50% { transform: rotate(-10deg); }
+      75% { transform: rotate(10deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes rotate360 {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .item {
+      text-align: center;
+      background-color: #e3710754;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.495);
+      width: 750px;
+    }
+
+    .item img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid black;
+      margin-bottom: 10px;
+    }
+
+    .caption {
+      font-size: 26px;
+      font-weight: bold;
+      color: #fff;
+      font-family: 'Georgia', serif;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
+
+   video {
+  width: 700px;
+  height: 500px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="sangitwbg.png" alt="Sangeet Logo" />
+    <div class="nav-buttons">
+      <a href="index.html"><i class="fas fa-home"></i>Home</a>
+      <a href="audio.html"><i class="fas fa-music"></i>Audio</a>
+      <a href="videos.html"><i class="fas fa-video"></i>Videos</a>
+    </div>
+  </div>
+
+  <!-- Video Gallery -->
+  <div class="gallery">
+
+    <div class="item">
+      
+      <p class="caption">राजा आला </p>
+      <video controls>
+        <source src="Raja Aala.mp4" type="video/mp4">
+        
+      </video>
+    </div>
+
+    <div class="item">
+      
+      <p class="caption">शिवबा राजा</p>
+      <video controls>
+        <source src="Shivba Raja  Sher Shivraj.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="item">
+     
+      <p class="caption">आले मराठे</p>
+      <video controls>
+        <source src="Aale Marathe.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    
+    </div>
+
+  </div>
+
+</body>
+</html>
